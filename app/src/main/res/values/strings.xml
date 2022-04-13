@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Feneant</string>
+    <string name="logo">Logo dun parresseux</string>
+
+    <string-array name="lifestyleCategories">
+        <item>health</item>
+        <item>nutrition</item>
+        <item>fitness</item>
+        <item>work</item>
+        <item>study</item>
+        <item>travel</item>
+    </string-array>
+
+    <string-array name="numberOfSkills">
+        <item>2 skills</item>
+        <item>2 skills</item>
+        <item>1 skills</item>
+        <item>0 skills</item>
+        <item>5 skills</item>
+        <item>3 skills</item>
+    </string-array>
+
+    <string-array name="lazinessPercentage">
+        <item>%</item>
+        <item>%</item>
+        <item>%</item>
+        <item>%</item>
+        <item>%</item>
+        <item>%</item>
+    </string-array>
+
+    <string name="hlth">Health</string>
+    <string name="ntrn">Nutrition</string>
+    <string name="ftns">Fitness</string>
+    <string name="work">Work</string>
+    <string name="stdy">Study</string>
+    <string name="trvl">Travel</string>
+
+</resources>
