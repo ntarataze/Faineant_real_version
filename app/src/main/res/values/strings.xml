@@ -29,7 +29,7 @@
         <item>%</item>
     </string-array>
 
-    <string name="hlth">Health</string>
+    <string name="toDO">To Do List</string>
     <string name="ntrn">Nutrition</string>
     <string name="ftns">Fitness</string>
     <string name="work">Work</string>

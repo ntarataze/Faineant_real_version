@@ -19,7 +19,7 @@
             android:checked = "false"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
-            android:onClick="supprimer"/>
+           />
 
 
         <LinearLayout
@@ -27,6 +27,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center">
+            <TextView
+                android:id="@+id/TacheID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" ></TextView>
 
             <TextView
                 android:id="@+id/nomTache"

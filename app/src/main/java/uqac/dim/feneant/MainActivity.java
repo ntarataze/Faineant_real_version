@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 return true;
 
-            case R.id.menu_nutrition:
+          /*  case R.id.menu_nutrition:
                 onBackPressed();
                 return true;
 
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.menu_travel:
                 onBackPressed();
-                return true;
+                return true;*/
 
             default:
                 return true;

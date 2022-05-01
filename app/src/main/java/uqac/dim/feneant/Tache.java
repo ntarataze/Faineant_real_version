@@ -2,19 +2,23 @@ package uqac.dim.feneant;
 
 import java.util.Date;
 
-public class Health {
-    private int idHealth;
+public class Tache {
+    private int idTache;
     private String nameTache;
     private String description;
     private String echeance_jour;
     private String echeance_heure;
+    private String ischeck;
 
-    public Health(String nameTache, String description, String echeance_jour,String echeance_heure) {
+    public Tache(String nameTache, String description, String echeance_jour, String echeance_heure, int idTache, String ischeck) {
 
+        this.idTache = idTache;
         this.setNameTache(nameTache);
         this.setDescription(description);
-        this.echeance_jour=echeance_jour;
-        this.echeance_heure=echeance_heure;
+        this.echeance_jour = echeance_jour;
+        this.echeance_heure = echeance_heure;
+        this.ischeck = ischeck;
+        System.out.println(ischeck + " / " + this.ischeck + " / " + this.getIscheck());
     }
 
     public String getNameTache() {
@@ -41,8 +45,11 @@ public class Health {
         return echeance_heure;
     }
 
-    public int getIdHealth() {
-        return idHealth;
+    public int getIdTache() {
+        return idTache;
     }
 
+    public boolean getIscheck() {
+        return ischeck.toLowerCase().equals("true");
+    }
 }

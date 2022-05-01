@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="8sp"
-        android:text="@string/hlth"
+        android:text="@string/toDO"
         android:textAlignment="center"
         android:textSize="40sp"
         android:textColor="@color/green" />
@@ -102,7 +102,6 @@
             android:textStyle="bold"></TextView>
 
     </LinearLayout>
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView2"

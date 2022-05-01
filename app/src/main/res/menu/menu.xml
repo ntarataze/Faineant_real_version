@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <item android:id="@+id/menu_health"
-    android:title="@string/hlth" />
-<item android:id="@+id/menu_nutrition"
-    android:title="@string/ntrn" />
-<item android:id="@+id/menu_fitness"
-    android:title="@string/ftns" />
-<item android:id="@+id/menu_work"
-    android:title="@string/work" />
-<item android:id="@+id/menu_study"
-    android:title="@string/stdy" />
-<item android:id="@+id/menu_travel"
-    android:title="@string/trvl" />
+    android:title="@string/toDO" />
+
 </menu>

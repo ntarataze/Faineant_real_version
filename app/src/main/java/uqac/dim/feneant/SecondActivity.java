@@ -12,35 +12,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SecondActivity extends AppCompatActivity {
-    DatabaseManager db;
+    static DatabaseManager db;
     RecyclerView rvPrograms;
-    HealthAdapter healthsAdapter;
+    TacheAdapter healthsAdapter;
     RecyclerView.LayoutManager layoutManager;
-    List<Health> listeTache = new ArrayList<>();
+    List<Tache> listeTache = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         db=new DatabaseManager(this);
-        listeTache = db.readHealth();
+        listeTache = db.readTache();
         rvPrograms=findViewById(R.id.recyclerView2);
         layoutManager = new LinearLayoutManager(this);
         rvPrograms.setLayoutManager(layoutManager);
-        healthsAdapter =new HealthAdapter(this, listeTache, rvPrograms);
+        healthsAdapter =new TacheAdapter(this, listeTache, rvPrograms);
         rvPrograms.setAdapter(healthsAdapter);
-
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         db = new DatabaseManager(this);
-        listeTache = db.readHealth();
+        listeTache = db.readTache();
         rvPrograms = findViewById(R.id.recyclerView2);
         layoutManager = new LinearLayoutManager(this);
         rvPrograms.setLayoutManager(layoutManager);
-        healthsAdapter = new HealthAdapter(this, listeTache, rvPrograms);
+        healthsAdapter = new TacheAdapter(this, listeTache, rvPrograms);
         rvPrograms.setAdapter(healthsAdapter);
     }
 
