@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pale_blue">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8sp"
+        android:text="@string/hlth"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/messagePourcentage"
+        android:textSize="20sp"
+        android:textAlignment="center"></TextView>
+
+    <ProgressBar
+        android:id="@+id/health_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:progressBackgroundTint="@color/green"
+        android:progressTint="@color/pale_red"
+        android:progress="35">
+    </ProgressBar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skillShapes"
+            android:textSize="20sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="30sp"
+            android:paddingVertical="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"
+            android:layout_gravity="center"
+            android:paddingHorizontal="10sp"></ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/square"
+            android:layout_gravity="center"
+            android:paddingHorizontal="10sp"></ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle"
+            android:layout_gravity="center"
+            android:paddingHorizontal="10sp"></ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle"
+            android:layout_gravity="center"
+            android:paddingHorizontal="10sp"></ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addEventButton"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_baseline_add_24"
+            android:paddingHorizontal="10sp"
+            android:onClick="openPlanner"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addEvent"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:paddingRight="30sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>
+
+

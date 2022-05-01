@@ -36,4 +36,16 @@
     <string name="stdy">Study</string>
     <string name="trvl">Travel</string>
 
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="messagePourcentage">Vous êtes fénéant à </string>
+    <string name="skillShapes">Skills</string>
+    <string name="addEvent">Ajouter un évènement</string>
+    <string name="planDate">Select date:</string>
+    <string name="planTime">Select time:</string>
+
 </resources>
