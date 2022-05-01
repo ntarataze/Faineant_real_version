@@ -14,7 +14,7 @@ import java.util.List;
 
 public class DatabaseManager extends SQLiteOpenHelper {
     private static final String DATABASE_NAME="feneant.db";
-    private static final int DATABASE_VERSION=7;
+    private static final int DATABASE_VERSION=9;
 
     public DatabaseManager(Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);

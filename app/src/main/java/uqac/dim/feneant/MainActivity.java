@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         db = new DatabaseManager( this );
-        db.insertIntoHealth("coeur","rdv","MAY 23 2023","19:00");
+        //db.insertIntoHealth("coeur","rdv","MAY 23 2023","19:00");
 
         recyclerViewHome = findViewById(R.id.recyclerViewHome);
 

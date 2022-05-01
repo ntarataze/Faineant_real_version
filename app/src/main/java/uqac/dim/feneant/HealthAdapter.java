@@ -2,9 +2,11 @@ package uqac.dim.feneant;
 
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,12 +19,15 @@ class HealthAdapter extends RecyclerView.Adapter<HealthAdapter.ViewHolder> {
     List<Health> tacheList;
     RecyclerView rvPrograms;
 
+
     //final View.OnClickListener onClickListener = new MyOnClickListener();
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView rowTache;
         TextView rowDescription;
         TextView rowJour;
         TextView rowHeure;
+        CheckBox ch1;
+        private HealthAdapter adapter;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -30,6 +35,19 @@ class HealthAdapter extends RecyclerView.Adapter<HealthAdapter.ViewHolder> {
             rowDescription = itemView.findViewById(R.id.DescriptionTache);
             rowJour = itemView.findViewById(R.id.Echeance_jour);
             rowHeure = itemView.findViewById(R.id.Echeance_heure);
+            //ch1=itemView.findViewById(R.id.Checko);
+
+            ch1 = itemView.findViewById(R.id.Checko);
+
+            if (ch1.isChecked()){
+                System.out.println("lkdsqk");
+                //adapter.tacheList.remove(getAdapterPosition());
+                //adapter.notifyItemRemoved(getAdapterPosition());
+                Log.i("CHECKBOX"," recu");
+
+            }
+
+
         }
     }
     public HealthAdapter(Context context, List<Health> tacheList, RecyclerView rvPrograms){
@@ -57,4 +75,5 @@ class HealthAdapter extends RecyclerView.Adapter<HealthAdapter.ViewHolder> {
     public int getItemCount() {
         return tacheList.size();
     }
+
 }

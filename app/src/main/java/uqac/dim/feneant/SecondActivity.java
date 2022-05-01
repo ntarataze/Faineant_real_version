@@ -30,8 +30,20 @@ public class SecondActivity extends AppCompatActivity {
         healthsAdapter =new HealthAdapter(this, listeTache, rvPrograms);
         rvPrograms.setAdapter(healthsAdapter);
 
-
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        db = new DatabaseManager(this);
+        listeTache = db.readHealth();
+        rvPrograms = findViewById(R.id.recyclerView2);
+        layoutManager = new LinearLayoutManager(this);
+        rvPrograms.setLayoutManager(layoutManager);
+        healthsAdapter = new HealthAdapter(this, listeTache, rvPrograms);
+        rvPrograms.setAdapter(healthsAdapter);
+    }
+
     public void openPlanner(View v){
         Intent intent = new Intent(SecondActivity.this, CreatorEvent.class);
         startActivity(intent);

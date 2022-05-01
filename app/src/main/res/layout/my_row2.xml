@@ -13,12 +13,14 @@
         android:background="@drawable/border"
         >
         <CheckBox
-            android:id="@+id/checkbox"
+            android:id="@+id/Checko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked = "false"
             android:layout_gravity="center"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:onClick="supprimer"/>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
