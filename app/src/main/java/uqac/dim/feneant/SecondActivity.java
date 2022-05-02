@@ -22,6 +22,7 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         db=new DatabaseManager(this);
         listeTache = db.readTache();
         rvPrograms=findViewById(R.id.recyclerView2);

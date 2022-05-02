@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Feneant">
-        <activity android:name=".SecondActivity"></activity>
-        <activity android:name=".CreatorEvent" />
+        <activity android:name=".SecondActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".CreatorEvent"
+            android:parentActivityName=".SecondActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

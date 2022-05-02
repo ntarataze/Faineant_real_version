@@ -34,6 +34,7 @@ public class CreatorEvent extends AppCompatActivity {
         setContentView(R.layout.activity_creator_event);
         initDatePicker();
         db = new DatabaseManager(this);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         dateButton = findViewById(R.id.datePickerSpinner);
