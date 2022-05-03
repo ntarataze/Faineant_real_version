@@ -85,5 +85,22 @@ public class DatabaseManager extends SQLiteOpenHelper {
         Log.i("DATABASE","onUpgrade invoked");
     }
 
+    public int getTacheReussiCount() {
+        String countQuery = "select * from T_tache where isCheck='true'";
+        this.getReadableDatabase().rawQuery(countQuery,null);
+        Cursor cursor = this.getReadableDatabase().rawQuery(countQuery, null);
+        int count = cursor.getCount();
+        cursor.close();
+        return count;
+    }
+    public int getFailedTache() {
+        String countQuery = "select count(*) from T_tache where isCheck='false'";
+        this.getReadableDatabase().rawQuery(countQuery,null);
+        Cursor cursor = this.getReadableDatabase().rawQuery(countQuery, null);
+        int count = cursor.getCount();
+        cursor.close();
+        return count;
+    }
+
 }
 

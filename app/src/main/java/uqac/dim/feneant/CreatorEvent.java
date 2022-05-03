@@ -36,7 +36,6 @@ public class CreatorEvent extends AppCompatActivity {
         db = new DatabaseManager(this);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
         dateButton = findViewById(R.id.datePickerSpinner);
         timeButton = findViewById(R.id.timePickerSpinner);
         dateButton.setText(getTodaysDate());

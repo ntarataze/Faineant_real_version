@@ -55,7 +55,7 @@ class TacheAdapter extends RecyclerView.Adapter<TacheAdapter.ViewHolder> {
                         TacheAdapter.tacheAdapter.tacheList.remove(getAdapterPosition());
                         TacheAdapter.tacheAdapter.notifyItemRemoved(getAdapterPosition());
                         int currentID = Integer.parseInt(rowTacheId.getText().toString());
-                        SecondActivity.db.updateCheckTache(currentID, true);
+                        //SecondActivity.db.updateCheckTache(currentID, true);
                         Log.i("CHECKBOX"," recu");
                     }
 

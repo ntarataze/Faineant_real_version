@@ -47,5 +47,8 @@
     <string name="addEvent">Ajouter un évènement</string>
     <string name="planDate">Select date:</string>
     <string name="planTime">Select time:</string>
-
+    <string name="Pourcentage">%</string>
+    <string name="skillCount">Nombre de skills:</string>
+    <string name="skillNumber">/4</string>
+    <string name="empty">Votre calendrier est vide!</string>
 </resources>

@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
     R.drawable.study, R.drawable.travel};
 
     private DatabaseManager db;*/
+    private TextView textSkils;
+    private TextView tacheReussi;
+    private TextView tachePasReussi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewHome.setLayoutManager(new LinearLayoutManager(this));
 
         db=new DatabaseManager(this);*/
+        //textSkils=findViewById(R.id.textSkills);
+        tacheReussi=findViewById(R.id.doneTaskCount);
+        tachePasReussi=findViewById(R.id.incompleteTaskCount);
+        int reussi=SecondActivity.db.getTacheReussiCount();
+        int failed=SecondActivity.db.getFailedTache();
+        tacheReussi.setText(reussi);
+        tachePasReussi.setText(failed);
+       // textSkils.setText((reussi*10)-(failed*5));
+
 
     }
 
